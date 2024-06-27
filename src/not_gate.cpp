@@ -1,5 +1,5 @@
-#include "not_gate.h"
-#include "Pin.h"
+#include "../include/not_gate.h"
+#include "../include/Pin.h"
 
 NOTGate::NOTGate(const std::string& id) : Gate(id, 1) {}
 
