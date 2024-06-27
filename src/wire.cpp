@@ -1,4 +1,4 @@
-#include "wire.h"
+#include "../include/wire.h"
 
 Wire::Wire(Pin* src, Pin* dest) {
 	source = src;
