@@ -1,4 +1,4 @@
-#include "component.h"
+#include "../include/component.h"
 
 Component::Component(const std::string& idx) {
 	id = idx;
