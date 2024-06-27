@@ -1,4 +1,4 @@
-#include "circuit.h"
+#include "../include/circuit.h"
 
 Circuit::~Circuit() {
 	for (Component* comp : components) {
