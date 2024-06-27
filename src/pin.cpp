@@ -1,4 +1,4 @@
-#include "pin.h"
+#include "../include/pin.h"
 
 Pin::Pin(const std::string& id) : Component(id) {}
 
