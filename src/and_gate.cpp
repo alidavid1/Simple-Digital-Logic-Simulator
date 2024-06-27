@@ -1,5 +1,5 @@
-#include "and_gate.h"
-#include "Pin.h"
+#include "../include/and_gate.h"
+#include "../include/Pin.h"
 
 ANDGate::ANDGate(const std::string& id) : Gate(id, 2) {}
 
