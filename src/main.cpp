@@ -1,8 +1,8 @@
-#include "C:\Users\david\Desktop\oop_ass3\include\circuit.h"
-#include "C:\Users\david\Desktop\oop_ass3\include\pin.h"
-#include "C:\Users\david\Desktop\oop_ass3\include\and_gate.h"
-#include "C:\Users\david\Desktop\oop_ass3\include\or_gate.h"
-#include "C:\Users\david\Desktop\oop_ass3\include\not_gate.h"
+#include "../include/circuit.h"
+#include "../include/pin.h"
+#include ""../include/and_gate.h"
+#include "../include/or_gate.h"
+#include "../include/not_gate.h"
 
 #include <iostream>
 
@@ -47,8 +47,7 @@ int main()
     circuit.addWire(new Wire{and1->getOutputPin(), or1->getInputPin(0)});
     circuit.addWire(new Wire{and2->getOutputPin(), or1->getInputPin(1)});
 
-    // Run the simulation
-    // Simulate all possible combinations of inputs
+
     for (int i = 0; i < 16; ++i)
     {
         // Set inputs based on the bits of i
@@ -57,10 +56,8 @@ int main()
         C->setSignal(i & 4);
         D->setSignal(i & 8);
 
-        // Simulate the circuit
         circuit.simulate();
-
-        // Print out the result for this combination
+   
 
         std::cout << "Inputs: A=" << (i & 1) << ", B=" << ((i & 2) >> 1) << ", C=" << ((i & 4) >> 2) << ", D=" << ((i & 8) >> 3)
                   << " | Output: " << or1->getOutputPin()->getSignal() << std::endl;
