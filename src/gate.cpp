@@ -1,5 +1,5 @@
-#include "gate.h"
-#include "pin.h"
+#include "../include/gate.h"
+#include "../include/pin.h"
 
 Gate::Gate(const std::string& id, int numberOfInputs) : Component(id) {
     for (int i = 0; i < numberOfInputs; i++) {
